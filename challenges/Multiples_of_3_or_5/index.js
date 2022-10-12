@@ -12,11 +12,11 @@ function solution(number) {
     }
     return sum;
 }
-const case1 = solution(10); // 3, 5, 6, 9 = 23
-const case2 = solution(15); // 3, 5, 6, 9, 10, 12 = 45
-const case3 = solution(-1);
-const case4 = solution(20);
-console.log("case1:", case1);
-console.log("case2:", case2);
-console.log("case3:", case3);
-console.log("case4:", case4);
+const solution1 = solution(10); // 3, 5, 6, 9 = 23
+const solution2 = solution(15); // 3, 5, 6, 9, 10, 12 = 45
+const solution3 = solution(-1);
+const solution4 = solution(20);
+console.log("case1:", solution1);
+console.log("case2:", solution2);
+console.log("case3:", solution3);
+console.log("case4:", solution4);
