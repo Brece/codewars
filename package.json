@@ -1,0 +1,23 @@
+{
+  "name": "codewars",
+  "description": "In this repository I'm posting my solutions to coding challenges on **[Codewars](https://www.codewars.com)**.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brece/codewars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brece/codewars/issues"
+  },
+  "homepage": "https://github.com/Brece/codewars#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
