@@ -2,7 +2,7 @@ There is a queue for the self-checkout tills at the supermarket. Your task is wr
 
 **Input**
 - customers: an array of positive integers representing the queue. Each integer represents a customer, and its value is the amount of time they require to check out.
-- n: a positive integer, the number of checkout tills.
+- n: a positive integer, the number of checkout tills (Kasse).
 
 **Output**
 - The function should return an integer, the total time required.
@@ -23,12 +23,13 @@ queueTime([10,2,3,3], 2)
 
 queueTime([2,3,10], 2)
 // should return 12
+// 3rd person has to wait for the person with the lowest number of items to finish => 2 + 10
 ```
 
 
 **Clarifications**
-- There is only ONE queue serving many tills, and
-- The order of the queue NEVER changes, and
+- There is only **ONE** queue serving many tills, and
+- The order of the queue **NEVER** changes, and
 - The front person in the queue (i.e. the first element in the array/list) proceeds to a till as soon as it becomes free.
 
 N.B. You should assume that all the test input will be valid, as specified above.
