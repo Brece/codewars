@@ -1,4 +1,5 @@
 // TODO:
+/*
 function queueTime(customers: number[], n: number): number {
     if (n === 1) {
         return customers.reduce((a, b) => a + b);
@@ -15,6 +16,13 @@ function queueTime(customers: number[], n: number): number {
     }
 
     return 0;
+}
+*/
+function queueTime(customers: number[], n: number): number {
+    // create temp array that holds as many items as there are queues
+    // the first n-customers are the initial values for each queue; e.g. [1,8,4,5] with n=2 results to temp=[1,8]
+    // find minimum in temp array and add the next customer to it; do this until the end of customer array reaches its end
+    // find and return maximum of temp array
 }
 
 const queueTime1 = queueTime([5,3,4], 1); // 12
