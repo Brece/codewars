@@ -1,5 +1,4 @@
 function findOdd(arr: number[]): number {
-    let oddNum = arr[0];
     let map = new Map();
     arr.forEach(num => map.has(num) ? map.set(num, map.get(num) + 1) : map.set(num, 1));
     for (const [key, value] of map) {
@@ -8,7 +7,7 @@ function findOdd(arr: number[]): number {
         }
     }
 
-    return oddNum;
+    return arr[0];
 }
 
 console.log(findOdd([7]), 7);
