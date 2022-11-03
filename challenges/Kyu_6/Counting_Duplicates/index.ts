@@ -1,12 +1,10 @@
 function duplicateCount(text: string):number {
     let map = new Map();
     let result = 0;
-
     for(let i = 0; i < text.length; i++) {
         const char = text[i].toLowerCase();
         map.has(char) ? map.set(char, map.get(char) + 1) : map.set(char, 1);
     }
-
     for(const [key, value] of map) {
         if(value > 1) {
             result++;
