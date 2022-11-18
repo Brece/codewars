@@ -2,7 +2,7 @@
 function countSmileys(arr) {
     let count = 0;
     arr.forEach((str => {
-        if (str.match(/[:;][-~]?[D)]/)) {
+        if (str.match(/[:;][-~]?[D\)]/)) {
             count++;
         }
     }));
