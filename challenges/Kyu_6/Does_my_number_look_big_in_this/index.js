@@ -3,7 +3,7 @@ function narcissistic(value) {
     let arr = value.toString().split('');
     let pow = arr.length;
     let result = 0;
-    arr.forEach(n => result += Number(n) ** pow);
+    arr.forEach(n => result += Math.pow(Number(n), pow));
     return value === result;
 }
 console.log(narcissistic(7), true, "7 is narcissistic");

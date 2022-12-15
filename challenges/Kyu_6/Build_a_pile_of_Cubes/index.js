@@ -1,8 +1,8 @@
 "use strict";
 function findNb(m) {
     let volume = 0;
-    for (let i = 1, k = m ** (1 / 3); i <= k; i++) {
-        volume += i ** 3;
+    for (let i = 1, k = Math.pow(m, (1 / 3)); i <= k; i++) {
+        volume += Math.pow(i, 3);
         if (volume === m) {
             return i;
         }

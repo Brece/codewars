@@ -23,7 +23,7 @@ Mac: Shift+Cmd+B and select tsc:watch task
 Windows: Shift+Ctrl+B
 ```
 
-## Run Jest testing:
+## Run Jest testing a specific file:
 ```
-npm test
+npx jest testName.test.js 
 ```

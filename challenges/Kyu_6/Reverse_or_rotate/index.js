@@ -14,7 +14,7 @@ function revrot(str, sz) {
     }
     // transform sub arrays
     return subArr.map((s) => {
-        if (s.reduce((a, b) => a + Number(b) ** 3, 0) % 2 === 0) {
+        if (s.reduce((a, b) => a + Math.pow(Number(b), 3), 0) % 2 === 0) {
             // reverse sub
             return s.reverse().join('');
         }

@@ -12,7 +12,7 @@ function squareRootApproximation(x) {
     return temp;
 }
 function squareRoot(x) {
-    return Number((x ** 0.5).toFixed(5));
+    return Number((Math.pow(x, 0.5)).toFixed(5));
 }
 console.log(squareRoot(81)); // 9
 console.log(squareRoot(15)); // 3.87298

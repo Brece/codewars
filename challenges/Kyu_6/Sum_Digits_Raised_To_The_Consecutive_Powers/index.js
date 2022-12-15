@@ -2,7 +2,7 @@
 function sumDigPow(a, b) {
     let result = [];
     for (let i = a; i <= b; i++) {
-        if (i.toString().split('').reduce((x, y, index) => x + Number(y) ** (index + 1), 0) === i) {
+        if (i.toString().split('').reduce((x, y, index) => x + Math.pow(Number(y), (index + 1)), 0) === i) {
             result.push(i);
         }
     }
