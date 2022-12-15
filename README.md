@@ -22,3 +22,8 @@ npx tsc --init
 Mac: Shift+Cmd+B and select tsc:watch task
 Windows: Shift+Ctrl+B
 ```
+
+## Run Jest testing:
+```
+npm test
+```
