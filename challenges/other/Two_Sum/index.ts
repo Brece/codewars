@@ -1,4 +1,4 @@
-function twoSum(arr: number[], n: number): number[] {
+export function twoSum(arr: number[], n: number): number[] {
 	const pairs: Array<number[]> = [];
 	const nums: { [key: number]: number } = {};
 
@@ -7,8 +7,6 @@ function twoSum(arr: number[], n: number): number[] {
 		nums[num2] ? pairs.push([num1, num2]) : nums[num1] = 1;
 	}
 	return pairs;
-};
-
-export = { twoSum };
+}
 
 console.log(twoSum([1, 2, 2, 3, 4], 4), [[2, 2], [3, 1]]);
