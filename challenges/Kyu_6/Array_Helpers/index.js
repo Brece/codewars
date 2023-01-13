@@ -1,9 +1,9 @@
 "use strict";
 Array.prototype.square = function () {
-    return this.map(n => Math.pow(n, 2));
+    return this.map(n => n ** 2);
 };
 Array.prototype.cube = function () {
-    return this.map(n => Math.pow(n, 3));
+    return this.map(n => n ** 3);
 };
 Array.prototype.sum = function () {
     return this.reduce((a, b) => a + b, 0);

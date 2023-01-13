@@ -2,7 +2,7 @@
 function squareDigits(num) {
     return Number(String(num)
         .split('')
-        .map(num => Math.pow(Number(num), 2)).join(''));
+        .map(num => Number(num) ** 2).join(''));
 }
 console.log(squareDigits(3212)); // 9414
 console.log(squareDigits(2112)); // 4114
